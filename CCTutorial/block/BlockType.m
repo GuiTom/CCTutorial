@@ -12,7 +12,7 @@
 -(void)test1{
     //1.不访问block之外的变量的block为全局block
     void (^block1)(void) = ^{
-        
+        NSLog(@"这是个全局block");
     };
     NSLog(@"block1 class: %@", NSStringFromClass([block1 class]));//全局block
     NSLog(@"block2 class: %@", NSStringFromClass([^{} class]));//全局block
@@ -41,7 +41,7 @@
 -(void)test3{
     
     //3.对栈block进行复制(赋值)的block为堆block
-    __block int localC = 1231;//不论是基本数据类型还是对象类型，
+    int localC = 1231;//不论是基本数据类型还是对象类型，
     void(^block3)(void) = ^{//copy操作
          NSLog(@"%d",localC);
     };

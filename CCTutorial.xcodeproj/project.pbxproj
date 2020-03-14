@@ -14,6 +14,7 @@
 		CA46CBE2241BC9B800EA7EBB /* Block__blockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBE1241BC9B800EA7EBB /* Block__blockViewController.m */; };
 		CA46CBE6241C6A3A00EA7EBB /* Block_TypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBE5241C6A3A00EA7EBB /* Block_TypeViewController.m */; };
 		CA46CBE9241C6A9300EA7EBB /* BlockType.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBE8241C6A9300EA7EBB /* BlockType.m */; };
+		CA46CBEC241CAE2900EA7EBB /* BlockCycleRetainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBEB241CAE2900EA7EBB /* BlockCycleRetainViewController.m */; };
 		CA55A818241AF47C00FC581C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A817241AF47C00FC581C /* AppDelegate.m */; };
 		CA55A81E241AF47C00FC581C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A81D241AF47C00FC581C /* ViewController.m */; };
 		CA55A823241AF47D00FC581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA55A822241AF47D00FC581C /* Assets.xcassets */; };
@@ -58,7 +59,9 @@
 		CA46CBE4241C6A3A00EA7EBB /* Block_TypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block_TypeViewController.h; sourceTree = "<group>"; };
 		CA46CBE5241C6A3A00EA7EBB /* Block_TypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Block_TypeViewController.m; sourceTree = "<group>"; };
 		CA46CBE7241C6A9300EA7EBB /* BlockType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockType.h; sourceTree = "<group>"; };
-		CA46CBE8241C6A9300EA7EBB /* BlockType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockType.m; sourceTree = "<group>"; };
+		CA46CBE8241C6A9300EA7EBB /* BlockType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockType.m; sourceTree = "<group>"; wrapsLines = 0; };
+		CA46CBEA241CAE2900EA7EBB /* BlockCycleRetainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockCycleRetainViewController.h; sourceTree = "<group>"; };
+		CA46CBEB241CAE2900EA7EBB /* BlockCycleRetainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockCycleRetainViewController.m; sourceTree = "<group>"; };
 		CA55A813241AF47C00FC581C /* CCTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA55A816241AF47C00FC581C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA55A817241AF47C00FC581C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				CA46CBE1241BC9B800EA7EBB /* Block__blockViewController.m */,
 				CA46CBE4241C6A3A00EA7EBB /* Block_TypeViewController.h */,
 				CA46CBE5241C6A3A00EA7EBB /* Block_TypeViewController.m */,
+				CA46CBEA241CAE2900EA7EBB /* BlockCycleRetainViewController.h */,
+				CA46CBEB241CAE2900EA7EBB /* BlockCycleRetainViewController.m */,
 			);
 			path = block;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				CA46CBE2241BC9B800EA7EBB /* Block__blockViewController.m in Sources */,
 				CA46CBCD241AFCC200EA7EBB /* BlockSource.m in Sources */,
 				CA55A851241AF55800FC581C /* HomeViewController.m in Sources */,
+				CA46CBEC241CAE2900EA7EBB /* BlockCycleRetainViewController.m in Sources */,
 				CA46CBE6241C6A3A00EA7EBB /* Block_TypeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

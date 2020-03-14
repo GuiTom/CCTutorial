@@ -10,7 +10,7 @@
 #import "Block__block.m"
 @interface Block__blockViewController ()
 @property(strong,nonatomic)UITableView *table;
-@property(strong,nonatomic)NSArray *dataSource;
+
 @end
 
 @implementation Block__blockViewController
@@ -28,13 +28,12 @@
     }
 }
 -(NSArray*)dataSource{
-    if(!_dataSource){
-        _dataSource = @[
+    
+        return @[
             @"__block修饰的基本类型变量",
             @"__block修饰的对象变量",
         ];
-    }
-    return _dataSource;
+   
 }
 /*
 #pragma mark - Navigation

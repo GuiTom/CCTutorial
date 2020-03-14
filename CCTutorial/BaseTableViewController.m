@@ -10,7 +10,6 @@
 
 @interface BaseTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
-@property(strong,nonatomic)NSArray *dataSource;
 @end
 static NSString *cellId = @"cellID";
 @implementation BaseTableViewController
@@ -35,7 +34,10 @@ static NSString *cellId = @"cellID";
     cell.textLabel.text = self.dataSource[indexPath.row];
     return cell;
 }
-
+-(NSArray*)dataSource{
+    
+        return @[];
+}
 /*
 #pragma mark - Navigation
 

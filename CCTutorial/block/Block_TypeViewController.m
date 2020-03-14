@@ -9,7 +9,7 @@
 #import "Block_TypeViewController.h"
 #import "BlockType.h"
 @interface Block_TypeViewController ()
-@property(strong,nonatomic)NSArray *dataSource;
+
 @end
 
 @implementation Block_TypeViewController
@@ -31,15 +31,12 @@
     }
 }
 -(NSArray*)dataSource{
-    if(!_dataSource){
-        _dataSource = @[
+    return @[
             @"全局block",
             @"栈block",
             @"堆block",
             @"练习题"
         ];
-    }
-    return _dataSource;
 }
 /*
 #pragma mark - Navigation

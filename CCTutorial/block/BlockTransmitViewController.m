@@ -11,7 +11,7 @@
 
 @interface BlockTransmitViewController ()
 @property(strong,nonatomic)UITableView *table;
-@property(strong,nonatomic)NSArray *dataSource;
+
 @end
 @implementation BlockTransmitViewController
 
@@ -34,16 +34,13 @@
     }
 }
 -(NSArray*)dataSource{
-    if(!_dataSource){
-        _dataSource = @[
+        return @[
             @"局部变量,截获值",
             @"局部静态变量，截获指针",
             @"全局静态变量，不截获",
             @"全局变量，不截获",
             @"对象类型,连同所有权修饰符一期截获"
         ];
-    }
-    return _dataSource;
 }
 /*
 #pragma mark - Navigation

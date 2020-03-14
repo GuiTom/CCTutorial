@@ -11,6 +11,7 @@
 #import "BlockTransmitViewController.h"
 #import "Block__blockViewController.h"
 #import "Block_TypeViewController.h"
+#import "BlockCycleRetainViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -28,7 +29,6 @@ static NSString *cellId = @"cellID";
     self.table.delegate = self;
     [self.table registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
     [self.view addSubview:self.table];
-    self.view.backgroundColor = [UIColor redColor];
 }
 #pragma mark UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -86,7 +86,10 @@ static NSString *cellId = @"cellID";
           [self.navigationController pushViewController:[Block__blockViewController new] animated:YES];
         }else if([title isEqualToString:@"block按存储区分类"]){
           [self.navigationController pushViewController:[Block_TypeViewController new] animated:YES];
+        }else if([title isEqualToString:@"block循环引用造成内存泄露的例子"]){
+          [self.navigationController pushViewController:[BlockCycleRetainViewController new] animated:YES];
         }
+        
     }
 }
 

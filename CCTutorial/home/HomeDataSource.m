@@ -33,9 +33,11 @@
                 @"header":@"block相关",
                 @"cells":@[
                         @{@"title":@"block的本质"},
+                        @{@"title":@"block按存储区分类"},
                         @{@"title":@"block的变量截取"},
                         @{@"title":@"__block修饰符"},
-                        @{@"title":@"block按存储区分类"}
+                        @{@"title":@"block循环引用造成内存泄露的例子"},
+                        
                 ]
             },
             @{
