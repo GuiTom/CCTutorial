@@ -43,6 +43,7 @@ int a = 7;
             NSLog(@"weakSelf指向的地址是%p",weakSelf);
         }
     });
+   
 }
 /*
 #pragma mark - Navigation

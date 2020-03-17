@@ -6,7 +6,7 @@
 //  Created by CC on 2020/1/16.
 //  Copyright © 2020 CC. All rights reserved.
 //
-
+#import <objc/message.h>
 #import "HomeDataSource.h"
 @interface HomeDataSource()
 
@@ -18,6 +18,7 @@
     dispatch_once(&onceToken, ^{
         instance = [[HomeDataSource alloc] init];
     });
+  
     return instance;
 }
 -(instancetype)init{
@@ -44,7 +45,9 @@
                 @"header":@"runtime相关",
                 @"cells":@[
                         @{@"title":@"runtime相关API"},
-                        @{@"title":@"方法交换"},
+                        @{@"title":@"消息转发流程"},
+                        @{@"title":@"方法动态交换"},
+                        @{@"title":@"关联对象"},
                         @{@"title":@"weak的实现"},
                         @{@"title":@"内测泄露检测"},
                 ]
@@ -52,6 +55,7 @@
             @{
                   @"header":@"runloop相关",
                   @"cells":@[
+                          @{@"title":@"线程保活"},
                           @{@"title":@"边滑动边计时"},
                           @{@"title":@"性能监测"},
                           @{@"title":@"APP保活"},
@@ -60,7 +64,7 @@
             @{
                   @"header":@"UI相关",
                   @"cells":@[
-                          @{@"title":@"UI时间传递"},
+                          @{@"title":@"UI事件传递"},
                           @{@"title":@"响应者链"},
                           @{@"title":@"异步渲染"},
                   ]

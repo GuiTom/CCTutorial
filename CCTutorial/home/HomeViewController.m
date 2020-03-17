@@ -12,6 +12,13 @@
 #import "Block__blockViewController.h"
 #import "Block_TypeViewController.h"
 #import "BlockCycleRetainViewController.h"
+#import "MethodForward.h"
+#import "MethodSwizling.h"
+#import "NSObject+Associated.h"
+#import "ThreadKeepaliveViewController.h"
+#import "TimeCountWhenScrollingViewController.h"
+#import "CrashDefenderViewController.h"
+#import "FluencyMonitor.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -90,6 +97,26 @@ static NSString *cellId = @"cellID";
           [self.navigationController pushViewController:[BlockCycleRetainViewController new] animated:YES];
         }
         
+    }else if([header isEqualToString:@"runtime相关"]){
+        if([title isEqualToString:@"消息转发流程"]){
+            [[MethodForward new] test];
+        }else if([title isEqualToString:@"方法动态交换"]){
+            [[MethodSwizling new] test1];
+        }else if([title isEqualToString:@"关联对象"]){
+            NSObject *obj = [NSObject new];
+            obj.aname = @"abc";
+            NSLog(@"obj.name:%@",obj.aname);
+        }
+    }else if([header isEqualToString:@"runloop相关"]){
+        if([title isEqualToString:@"线程保活"]){
+            [self.navigationController pushViewController:[ThreadKeepaliveViewController new] animated:YES];
+        }else if([title isEqualToString:@"边滑动边计时"]){
+            [self.navigationController pushViewController:[TimeCountWhenScrollingViewController new] animated:YES];
+        }else if([title isEqualToString:@"性能监测"]){
+            [[FluencyMonitor shareMonitor] start];
+        }else if([title isEqualToString:@"APP保活"]){
+            [self.navigationController pushViewController:[CrashDefenderViewController new] animated:YES];
+        }
     }
 }
 
