@@ -19,6 +19,7 @@
 #import "TimeCountWhenScrollingViewController.h"
 #import "CrashDefenderViewController.h"
 #import "FluencyMonitor.h"
+#import "MemoryLeakViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -102,6 +103,8 @@ static NSString *cellId = @"cellID";
             [[MethodForward new] test];
         }else if([title isEqualToString:@"方法动态交换"]){
             [[MethodSwizling new] test1];
+        }else if([title isEqualToString:@"内测泄露检测"]){
+            [self.navigationController pushViewController:[MemoryLeakViewController new] animated:YES];
         }else if([title isEqualToString:@"关联对象"]){
             NSObject *obj = [NSObject new];
             obj.aname = @"abc";

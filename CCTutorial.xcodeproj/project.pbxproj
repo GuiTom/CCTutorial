@@ -24,6 +24,8 @@
 		CA46CC972421153200EA7EBB /* CrashDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC962421153200EA7EBB /* CrashDefender.m */; };
 		CA46CC9A2421164E00EA7EBB /* CrashDefenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC992421164E00EA7EBB /* CrashDefenderViewController.m */; };
 		CA46CC9D242118CD00EA7EBB /* FluencyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC9C242118CD00EA7EBB /* FluencyMonitor.m */; };
+		CA46CCA02421BB7400EA7EBB /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC9F2421BB7400EA7EBB /* MemoryLeakViewController.m */; };
+		CA46CCAC2421C17700EA7EBB /* UIViewController+MemLeakFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CCAB2421C17700EA7EBB /* UIViewController+MemLeakFinder.m */; };
 		CA55A818241AF47C00FC581C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A817241AF47C00FC581C /* AppDelegate.m */; };
 		CA55A823241AF47D00FC581C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA55A822241AF47D00FC581C /* Assets.xcassets */; };
 		CA55A826241AF47D00FC581C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA55A824241AF47D00FC581C /* LaunchScreen.storyboard */; };
@@ -88,6 +90,10 @@
 		CA46CC992421164E00EA7EBB /* CrashDefenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashDefenderViewController.m; sourceTree = "<group>"; };
 		CA46CC9B242118CD00EA7EBB /* FluencyMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluencyMonitor.h; sourceTree = "<group>"; };
 		CA46CC9C242118CD00EA7EBB /* FluencyMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluencyMonitor.m; sourceTree = "<group>"; };
+		CA46CC9E2421BB7400EA7EBB /* MemoryLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeakViewController.h; sourceTree = "<group>"; };
+		CA46CC9F2421BB7400EA7EBB /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
+		CA46CCAA2421C17700EA7EBB /* UIViewController+MemLeakFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemLeakFinder.h"; sourceTree = "<group>"; };
+		CA46CCAB2421C17700EA7EBB /* UIViewController+MemLeakFinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemLeakFinder.m"; sourceTree = "<group>"; };
 		CA55A813241AF47C00FC581C /* CCTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA55A816241AF47C00FC581C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA55A817241AF47C00FC581C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,6 +172,10 @@
 				CA46CBF5241DBE5100EA7EBB /* MethodSwizling.m */,
 				CA46CC06241DEFC800EA7EBB /* NSObject+Associated.h */,
 				CA46CC07241DEFC800EA7EBB /* NSObject+Associated.m */,
+				CA46CC9E2421BB7400EA7EBB /* MemoryLeakViewController.h */,
+				CA46CC9F2421BB7400EA7EBB /* MemoryLeakViewController.m */,
+				CA46CCAA2421C17700EA7EBB /* UIViewController+MemLeakFinder.h */,
+				CA46CCAB2421C17700EA7EBB /* UIViewController+MemLeakFinder.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -397,7 +407,9 @@
 				CA46CBDC241BC07B00EA7EBB /* BlockTransmitViewController.m in Sources */,
 				CA46CBDF241BC3DE00EA7EBB /* BaseTableViewController.m in Sources */,
 				CA55A818241AF47C00FC581C /* AppDelegate.m in Sources */,
+				CA46CCAC2421C17700EA7EBB /* UIViewController+MemLeakFinder.m in Sources */,
 				CA55A829241AF47D00FC581C /* main.m in Sources */,
+				CA46CCA02421BB7400EA7EBB /* MemoryLeakViewController.m in Sources */,
 				CA46CC16241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.m in Sources */,
 				CA46CC972421153200EA7EBB /* CrashDefender.m in Sources */,
 				CA46CBE2241BC9B800EA7EBB /* Block__blockViewController.m in Sources */,
