@@ -20,6 +20,7 @@
 #import "CrashDefenderViewController.h"
 #import "FluencyMonitor.h"
 #import "MemoryLeakViewController.h"
+#import "GCDQueue.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -119,6 +120,16 @@ static NSString *cellId = @"cellID";
             [[FluencyMonitor shareMonitor] start];
         }else if([title isEqualToString:@"APP保活"]){
             [self.navigationController pushViewController:[CrashDefenderViewController new] animated:YES];
+        }
+    }else if([header isEqualToString:@"多线程"]){
+        if([title isEqualToString:@"GCD队列分类(全局并发队列)"]){
+            [[GCDQueue alloc] globalQueue];
+        }else if([title isEqualToString:@"GCD队列分类(主串行队列)"]){
+            [[GCDQueue alloc] mainQueue];
+        }else if([title isEqualToString:@"GCD队列分类(自建串行队列)"]){
+            [[GCDQueue alloc] serialQueue];
+        }else if([title isEqualToString:@"GCD队列分类(自建并发队列)"]){
+            [[GCDQueue alloc] concurrentQueue];
         }
     }
 }

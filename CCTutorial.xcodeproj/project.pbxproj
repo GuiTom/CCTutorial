@@ -34,6 +34,7 @@
 		CA55A83E241AF47D00FC581C /* CCTutorialUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A83D241AF47D00FC581C /* CCTutorialUITests.m */; };
 		CA55A850241AF55800FC581C /* HomeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A84C241AF55800FC581C /* HomeDataSource.m */; };
 		CA55A851241AF55800FC581C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A84D241AF55800FC581C /* HomeViewController.m */; };
+		CAEE34732425081E008AA006 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE34722425081E008AA006 /* GCDQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		CA55A84D241AF55800FC581C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CA55A84E241AF55800FC581C /* HomeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDataSource.h; sourceTree = "<group>"; };
 		CA55A84F241AF55800FC581C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CAEE34712425081E008AA006 /* GCDQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		CAEE34722425081E008AA006 /* GCDQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +223,7 @@
 		CA55A815241AF47C00FC581C /* CCTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				CAEE3470242507F0008AA006 /* multiThread */,
 				CA46CC0D241FC53D00EA7EBB /* runloop */,
 				CA46CBED241D18C000EA7EBB /* runtime */,
 				CA46CBCA241AFC8700EA7EBB /* block */,
@@ -263,6 +267,15 @@
 				CA55A84D241AF55800FC581C /* HomeViewController.m */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		CAEE3470242507F0008AA006 /* multiThread */ = {
+			isa = PBXGroup;
+			children = (
+				CAEE34712425081E008AA006 /* GCDQueue.h */,
+				CAEE34722425081E008AA006 /* GCDQueue.m */,
+			);
+			path = multiThread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +423,7 @@
 				CA46CCAC2421C17700EA7EBB /* UIViewController+MemLeakFinder.m in Sources */,
 				CA55A829241AF47D00FC581C /* main.m in Sources */,
 				CA46CCA02421BB7400EA7EBB /* MemoryLeakViewController.m in Sources */,
+				CAEE34732425081E008AA006 /* GCDQueue.m in Sources */,
 				CA46CC16241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.m in Sources */,
 				CA46CC972421153200EA7EBB /* CrashDefender.m in Sources */,
 				CA46CBE2241BC9B800EA7EBB /* Block__blockViewController.m in Sources */,
