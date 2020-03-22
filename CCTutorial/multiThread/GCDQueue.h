@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)mainQueue;
 -(void)serialQueue;
 -(void)concurrentQueue;
+-(void)async;
+-(void)sync;
+-(void)deadLock;
 @end
 
 NS_ASSUME_NONNULL_END

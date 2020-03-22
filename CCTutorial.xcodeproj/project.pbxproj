@@ -34,6 +34,12 @@
 		CA55A83E241AF47D00FC581C /* CCTutorialUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A83D241AF47D00FC581C /* CCTutorialUITests.m */; };
 		CA55A850241AF55800FC581C /* HomeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A84C241AF55800FC581C /* HomeDataSource.m */; };
 		CA55A851241AF55800FC581C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A84D241AF55800FC581C /* HomeViewController.m */; };
+		CAE87B9224277C230012CDDE /* Pthread.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B9124277C230012CDDE /* Pthread.m */; };
+		CAE87B95242791EC0012CDDE /* NSThreadSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B94242791EC0012CDDE /* NSThreadSample.m */; };
+		CAE87B98242794A60012CDDE /* NSOpreationSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B97242794A60012CDDE /* NSOpreationSample.m */; };
+		CAE87B9B24279AFF0012CDDE /* NSLockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B9A24279AFF0012CDDE /* NSLockSample.m */; };
+		CAE87B9E24279FCC0012CDDE /* SemaphoreSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B9D24279FCC0012CDDE /* SemaphoreSample.m */; };
+		CAE87BA42427A5C50012CDDE /* NSConditionSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87BA32427A5C50012CDDE /* NSConditionSample.m */; };
 		CAEE34732425081E008AA006 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE34722425081E008AA006 /* GCDQueue.m */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +118,18 @@
 		CA55A84D241AF55800FC581C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CA55A84E241AF55800FC581C /* HomeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDataSource.h; sourceTree = "<group>"; };
 		CA55A84F241AF55800FC581C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CAE87B9024277C230012CDDE /* Pthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pthread.h; sourceTree = "<group>"; };
+		CAE87B9124277C230012CDDE /* Pthread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pthread.m; sourceTree = "<group>"; };
+		CAE87B93242791EC0012CDDE /* NSThreadSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadSample.h; sourceTree = "<group>"; };
+		CAE87B94242791EC0012CDDE /* NSThreadSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadSample.m; sourceTree = "<group>"; };
+		CAE87B96242794A60012CDDE /* NSOpreationSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOpreationSample.h; sourceTree = "<group>"; };
+		CAE87B97242794A60012CDDE /* NSOpreationSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOpreationSample.m; sourceTree = "<group>"; };
+		CAE87B9924279AFF0012CDDE /* NSLockSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockSample.h; sourceTree = "<group>"; };
+		CAE87B9A24279AFF0012CDDE /* NSLockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockSample.m; sourceTree = "<group>"; };
+		CAE87B9C24279FCC0012CDDE /* SemaphoreSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemaphoreSample.h; sourceTree = "<group>"; };
+		CAE87B9D24279FCC0012CDDE /* SemaphoreSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SemaphoreSample.m; sourceTree = "<group>"; };
+		CAE87BA22427A5C50012CDDE /* NSConditionSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionSample.h; sourceTree = "<group>"; };
+		CAE87BA32427A5C50012CDDE /* NSConditionSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionSample.m; sourceTree = "<group>"; };
 		CAEE34712425081E008AA006 /* GCDQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
 		CAEE34722425081E008AA006 /* GCDQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -274,6 +292,18 @@
 			children = (
 				CAEE34712425081E008AA006 /* GCDQueue.h */,
 				CAEE34722425081E008AA006 /* GCDQueue.m */,
+				CAE87B9024277C230012CDDE /* Pthread.h */,
+				CAE87B9124277C230012CDDE /* Pthread.m */,
+				CAE87B93242791EC0012CDDE /* NSThreadSample.h */,
+				CAE87B94242791EC0012CDDE /* NSThreadSample.m */,
+				CAE87B96242794A60012CDDE /* NSOpreationSample.h */,
+				CAE87B97242794A60012CDDE /* NSOpreationSample.m */,
+				CAE87B9924279AFF0012CDDE /* NSLockSample.h */,
+				CAE87B9A24279AFF0012CDDE /* NSLockSample.m */,
+				CAE87B9C24279FCC0012CDDE /* SemaphoreSample.h */,
+				CAE87B9D24279FCC0012CDDE /* SemaphoreSample.m */,
+				CAE87BA22427A5C50012CDDE /* NSConditionSample.h */,
+				CAE87BA32427A5C50012CDDE /* NSConditionSample.m */,
 			);
 			path = multiThread;
 			sourceTree = "<group>";
@@ -410,18 +440,23 @@
 				CA46CBF3241D19FD00EA7EBB /* MethodForward.m in Sources */,
 				CA46CC9A2421164E00EA7EBB /* CrashDefenderViewController.m in Sources */,
 				CA46CC08241DEFC800EA7EBB /* NSObject+Associated.m in Sources */,
+				CAE87B9224277C230012CDDE /* Pthread.m in Sources */,
+				CAE87BA42427A5C50012CDDE /* NSConditionSample.m in Sources */,
 				CA46CBFC241DE91100EA7EBB /* MethodForward2.m in Sources */,
 				CA46CBD5241BB3D200EA7EBB /* BlockTransmit.m in Sources */,
 				CA55A850241AF55800FC581C /* HomeDataSource.m in Sources */,
 				CA46CBE9241C6A9300EA7EBB /* BlockType.m in Sources */,
 				CA46CC13241FC59800EA7EBB /* ThreadKeepaliveViewController.m in Sources */,
+				CAE87B98242794A60012CDDE /* NSOpreationSample.m in Sources */,
 				CA46CBF6241DBE5100EA7EBB /* MethodSwizling.m in Sources */,
 				CA46CC9D242118CD00EA7EBB /* FluencyMonitor.m in Sources */,
 				CA46CBDC241BC07B00EA7EBB /* BlockTransmitViewController.m in Sources */,
 				CA46CBDF241BC3DE00EA7EBB /* BaseTableViewController.m in Sources */,
 				CA55A818241AF47C00FC581C /* AppDelegate.m in Sources */,
+				CAE87B95242791EC0012CDDE /* NSThreadSample.m in Sources */,
 				CA46CCAC2421C17700EA7EBB /* UIViewController+MemLeakFinder.m in Sources */,
 				CA55A829241AF47D00FC581C /* main.m in Sources */,
+				CAE87B9E24279FCC0012CDDE /* SemaphoreSample.m in Sources */,
 				CA46CCA02421BB7400EA7EBB /* MemoryLeakViewController.m in Sources */,
 				CAEE34732425081E008AA006 /* GCDQueue.m in Sources */,
 				CA46CC16241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.m in Sources */,
@@ -429,6 +464,7 @@
 				CA46CBE2241BC9B800EA7EBB /* Block__blockViewController.m in Sources */,
 				CA46CBCD241AFCC200EA7EBB /* BlockSource.m in Sources */,
 				CA55A851241AF55800FC581C /* HomeViewController.m in Sources */,
+				CAE87B9B24279AFF0012CDDE /* NSLockSample.m in Sources */,
 				CA46CBEC241CAE2900EA7EBB /* BlockCycleRetainViewController.m in Sources */,
 				CA46CBE6241C6A3A00EA7EBB /* Block_TypeViewController.m in Sources */,
 			);

@@ -30,7 +30,7 @@
     NSLog(@"执行任务3");
 }
 -(void)serialQueue{
-    dispatch_queue_t queue = dispatch_queue_create(@"queue1", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL);
     for (int i=0; i<5; i++) {
         dispatch_sync(queue, ^{
           
@@ -39,7 +39,7 @@
     }
 }
 -(void)concurrentQueue{
-    dispatch_queue_t queue = dispatch_queue_create(@"queue1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("queue1", DISPATCH_QUEUE_CONCURRENT);
     dispatch_queue_t queue2 = dispatch_get_main_queue();
     
     for (int i=0; i<5; i++) {
@@ -47,5 +47,44 @@
               NSLog(@"不分先后地执行 %i %p %p",i,[NSThread currentThread],[NSThread mainThread]);
         });
     }
+}
+-(void)async{
+    dispatch_queue_t queue = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务1");
+        dispatch_async(queue, ^{
+           NSLog(@"执行任务2");
+        });
+        NSLog(@"执行任务3");
+    });
+}
+-(void)sync{
+    //并发队列
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    NSLog(@"执行任务1");
+    dispatch_sync(queue, ^{
+        NSLog(@"执行任务2");
+        dispatch_sync(queue, ^{
+             NSLog(@"执行任务3");
+         });
+    });
+ 
+    NSLog(@"执行任务4");
+}
+/**
+ 队列死锁的例子
+ 向当前串行队列添加同步任务会造成死锁
+ */
+-(void)deadLock{
+    dispatch_queue_t queue = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL);
+    NSLog(@"执行任务1");
+    dispatch_async(queue, ^{
+        NSLog(@"执行任务2");
+        dispatch_sync(queue, ^{//这里发生死锁
+           NSLog(@"执行任务3");//这个任务会无法执行
+        });
+        NSLog(@"执行任务4");
+    });
+    NSLog(@"执行任务5");
 }
 @end

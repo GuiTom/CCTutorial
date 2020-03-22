@@ -21,6 +21,12 @@
 #import "FluencyMonitor.h"
 #import "MemoryLeakViewController.h"
 #import "GCDQueue.h"
+#import "Pthread.h"
+#import "NSThreadSample.h"
+#import "NSOpreationSample.h"
+#import "NSLockSample.h"
+#import "SemaphoreSample.h"
+#import "NSConditionSample.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -122,7 +128,11 @@ static NSString *cellId = @"cellID";
             [self.navigationController pushViewController:[CrashDefenderViewController new] animated:YES];
         }
     }else if([header isEqualToString:@"多线程"]){
-        if([title isEqualToString:@"GCD队列分类(全局并发队列)"]){
+        if([title isEqualToString:@"pthread"]){
+            [[Pthread alloc] test1];
+        }if([title isEqualToString:@"NSThread"]){
+            [[[NSThreadSample alloc] init] test];
+        }else if([title isEqualToString:@"GCD队列分类(全局并发队列)"]){
             [[GCDQueue alloc] globalQueue];
         }else if([title isEqualToString:@"GCD队列分类(主串行队列)"]){
             [[GCDQueue alloc] mainQueue];
@@ -130,6 +140,20 @@ static NSString *cellId = @"cellID";
             [[GCDQueue alloc] serialQueue];
         }else if([title isEqualToString:@"GCD队列分类(自建并发队列)"]){
             [[GCDQueue alloc] concurrentQueue];
+        }else if([title isEqualToString:@"CGD异步"]){
+            [[GCDQueue alloc] async];
+        }else if([title isEqualToString:@"CGD同步"]){
+            [[GCDQueue alloc] sync];
+        }else if([title isEqualToString:@"CGD队列死锁的例子"]){
+            [[GCDQueue alloc] deadLock];
+        }else if([title isEqualToString:@"线程同步之互斥锁"]){
+            [[[NSLockSample alloc] init] test];
+        }else if([title isEqualToString:@"线程同步之条件锁"]){
+            [[[NSConditionSample alloc] init] test];
+        }else if([title isEqualToString:@"线程同步之信号量"]){
+            [[[SemaphoreSample alloc] init] test];
+        }else if([title isEqualToString:@"NSOpreation"]){
+            [[[NSOpreationSample alloc] init] test];
         }
     }
 }
