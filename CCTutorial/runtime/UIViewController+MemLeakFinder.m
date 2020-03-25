@@ -11,9 +11,15 @@
 #import <objc/runtime.h>
 
 @implementation UIViewController (MemLeakFinder)
-+(void)load{
-    NSLog(@"交换方法 %@",NSStringFromClass([self class]));
-    [self swizzleSEL:@selector(swizzled_viewDidDisappear:) withSEL:@selector(viewDidDisappear:)];
+//+(void)load{
+//    NSLog(@"交换方法 %@",NSStringFromClass([self class]));
+//    [self swizzleSEL:@selector(swizzled_viewDidDisappear:) withSEL:@selector(viewDidDisappear:)];
+//}
++(void)initialize{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self swizzleSEL:@selector(swizzled_viewDidDisappear:) withSEL:@selector(viewDidDisappear:)];
+    });
 }
 - (void)swizzled_viewDidDisappear:(BOOL)animated {
     [self swizzled_viewDidDisappear:animated];

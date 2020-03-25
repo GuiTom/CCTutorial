@@ -27,6 +27,9 @@
 #import "NSLockSample.h"
 #import "SemaphoreSample.h"
 #import "NSConditionSample.h"
+#import "EventTransmitViewController.h"
+#import "EventResponseAreaChangeViewController.h"
+#import "TimerLeakViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -108,6 +111,8 @@ static NSString *cellId = @"cellID";
     }else if([header isEqualToString:@"runtime相关"]){
         if([title isEqualToString:@"消息转发流程"]){
             [[MethodForward new] test];
+        }else if([title isEqualToString:@"消息转发代理解决timer内存泄露问题"]){
+            [self.navigationController pushViewController:[TimerLeakViewController new] animated:YES];
         }else if([title isEqualToString:@"方法动态交换"]){
             [[MethodSwizling new] test1];
         }else if([title isEqualToString:@"内测泄露检测"]){
@@ -127,7 +132,18 @@ static NSString *cellId = @"cellID";
         }else if([title isEqualToString:@"APP保活"]){
             [self.navigationController pushViewController:[CrashDefenderViewController new] animated:YES];
         }
-    }else if([header isEqualToString:@"多线程"]){
+    }else if([header isEqualToString:@"UI相关"]){
+        if([title isEqualToString:@"UI事件传递内部实现"]){
+            [self.navigationController pushViewController:[EventTransmitViewController new] animated:YES];
+        }else if([title isEqualToString:@"UI事件传递之改变事件响应区域"]){
+            [self.navigationController pushViewController:[EventResponseAreaChangeViewController new] animated:YES];
+        }else if([title isEqualToString:@"响应者链"]){
+            
+        }else if([title isEqualToString:@"异步渲染"]){
+         
+        }
+    }
+    else if([header isEqualToString:@"多线程"]){
         if([title isEqualToString:@"pthread"]){
             [[Pthread alloc] test1];
         }if([title isEqualToString:@"NSThread"]){
