@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA18AB572429CFEC009304BB /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB562429CFEC009304BB /* ViewB.m */; };
+		CA18AB5A2429D015009304BB /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB592429D015009304BB /* ViewA.m */; };
+		CA18AB5D2429F741009304BB /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB5C2429F741009304BB /* ViewC.m */; };
+		CA18AB602429F91A009304BB /* EventResponseAreaChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB5F2429F91A009304BB /* EventResponseAreaChangeViewController.m */; };
+		CA18AB66242BA307009304BB /* TimerLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB65242BA306009304BB /* TimerLeakViewController.m */; };
+		CA18AB69242BA3ED009304BB /* CCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB68242BA3ED009304BB /* CCProxy.m */; };
+		CA18AB6C242C2953009304BB /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB6B242C2953009304BB /* NSObject+MethodSwizzling.m */; };
+		CA18AB6F242C2A40009304BB /* UINavigationController+MemLeakFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB6E242C2A40009304BB /* UINavigationController+MemLeakFinder.m */; };
+		CA18AB73242C8856009304BB /* AsyncRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB72242C8856009304BB /* AsyncRenderViewController.m */; };
 		CA46CBCD241AFCC200EA7EBB /* BlockSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBCC241AFCC200EA7EBB /* BlockSource.m */; };
 		CA46CBD5241BB3D200EA7EBB /* BlockTransmit.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBD4241BB3D200EA7EBB /* BlockTransmit.m */; };
 		CA46CBDC241BC07B00EA7EBB /* BlockTransmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBDB241BC07B00EA7EBB /* BlockTransmitViewController.m */; };
@@ -34,6 +43,7 @@
 		CA55A83E241AF47D00FC581C /* CCTutorialUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A83D241AF47D00FC581C /* CCTutorialUITests.m */; };
 		CA55A850241AF55800FC581C /* HomeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A84C241AF55800FC581C /* HomeDataSource.m */; };
 		CA55A851241AF55800FC581C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A84D241AF55800FC581C /* HomeViewController.m */; };
+		CAAED7A62428E642006C04C1 /* EventTransmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAED7A52428E642006C04C1 /* EventTransmitViewController.m */; };
 		CAE87B9224277C230012CDDE /* Pthread.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B9124277C230012CDDE /* Pthread.m */; };
 		CAE87B95242791EC0012CDDE /* NSThreadSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B94242791EC0012CDDE /* NSThreadSample.m */; };
 		CAE87B98242794A60012CDDE /* NSOpreationSample.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE87B97242794A60012CDDE /* NSOpreationSample.m */; };
@@ -61,6 +71,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA18AB552429CFEC009304BB /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
+		CA18AB562429CFEC009304BB /* ViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
+		CA18AB582429D015009304BB /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
+		CA18AB592429D015009304BB /* ViewA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewA.m; sourceTree = "<group>"; };
+		CA18AB5B2429F741009304BB /* ViewC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewC.h; sourceTree = "<group>"; };
+		CA18AB5C2429F741009304BB /* ViewC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewC.m; sourceTree = "<group>"; };
+		CA18AB5E2429F91A009304BB /* EventResponseAreaChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventResponseAreaChangeViewController.h; sourceTree = "<group>"; };
+		CA18AB5F2429F91A009304BB /* EventResponseAreaChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventResponseAreaChangeViewController.m; sourceTree = "<group>"; };
+		CA18AB64242BA306009304BB /* TimerLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerLeakViewController.h; sourceTree = "<group>"; };
+		CA18AB65242BA306009304BB /* TimerLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerLeakViewController.m; sourceTree = "<group>"; };
+		CA18AB67242BA3ED009304BB /* CCProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCProxy.h; sourceTree = "<group>"; };
+		CA18AB68242BA3ED009304BB /* CCProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCProxy.m; sourceTree = "<group>"; };
+		CA18AB6A242C2953009304BB /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		CA18AB6B242C2953009304BB /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
+		CA18AB6D242C2A40009304BB /* UINavigationController+MemLeakFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemLeakFinder.h"; sourceTree = "<group>"; };
+		CA18AB6E242C2A40009304BB /* UINavigationController+MemLeakFinder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemLeakFinder.m"; sourceTree = "<group>"; };
+		CA18AB71242C8856009304BB /* AsyncRenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncRenderViewController.h; sourceTree = "<group>"; };
+		CA18AB72242C8856009304BB /* AsyncRenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncRenderViewController.m; sourceTree = "<group>"; };
 		CA46CBCB241AFCC200EA7EBB /* BlockSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSource.h; sourceTree = "<group>"; };
 		CA46CBCC241AFCC200EA7EBB /* BlockSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSource.m; sourceTree = "<group>"; };
 		CA46CBD3241BB3D200EA7EBB /* BlockTransmit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockTransmit.h; sourceTree = "<group>"; };
@@ -118,6 +146,8 @@
 		CA55A84D241AF55800FC581C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CA55A84E241AF55800FC581C /* HomeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDataSource.h; sourceTree = "<group>"; };
 		CA55A84F241AF55800FC581C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CAAED7A42428E642006C04C1 /* EventTransmitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTransmitViewController.h; sourceTree = "<group>"; };
+		CAAED7A52428E642006C04C1 /* EventTransmitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventTransmitViewController.m; sourceTree = "<group>"; };
 		CAE87B9024277C230012CDDE /* Pthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pthread.h; sourceTree = "<group>"; };
 		CAE87B9124277C230012CDDE /* Pthread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pthread.m; sourceTree = "<group>"; };
 		CAE87B93242791EC0012CDDE /* NSThreadSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadSample.h; sourceTree = "<group>"; };
@@ -197,6 +227,14 @@
 				CA46CC9F2421BB7400EA7EBB /* MemoryLeakViewController.m */,
 				CA46CCAA2421C17700EA7EBB /* UIViewController+MemLeakFinder.h */,
 				CA46CCAB2421C17700EA7EBB /* UIViewController+MemLeakFinder.m */,
+				CA18AB6D242C2A40009304BB /* UINavigationController+MemLeakFinder.h */,
+				CA18AB6E242C2A40009304BB /* UINavigationController+MemLeakFinder.m */,
+				CA18AB6A242C2953009304BB /* NSObject+MethodSwizzling.h */,
+				CA18AB6B242C2953009304BB /* NSObject+MethodSwizzling.m */,
+				CA18AB64242BA306009304BB /* TimerLeakViewController.h */,
+				CA18AB65242BA306009304BB /* TimerLeakViewController.m */,
+				CA18AB67242BA3ED009304BB /* CCProxy.h */,
+				CA18AB68242BA3ED009304BB /* CCProxy.m */,
 			);
 			path = runtime;
 			sourceTree = "<group>";
@@ -241,6 +279,7 @@
 		CA55A815241AF47C00FC581C /* CCTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				CAAED7A32428E602006C04C1 /* uicomponent */,
 				CAEE3470242507F0008AA006 /* multiThread */,
 				CA46CC0D241FC53D00EA7EBB /* runloop */,
 				CA46CBED241D18C000EA7EBB /* runtime */,
@@ -285,6 +324,25 @@
 				CA55A84D241AF55800FC581C /* HomeViewController.m */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		CAAED7A32428E602006C04C1 /* uicomponent */ = {
+			isa = PBXGroup;
+			children = (
+				CAAED7A42428E642006C04C1 /* EventTransmitViewController.h */,
+				CAAED7A52428E642006C04C1 /* EventTransmitViewController.m */,
+				CA18AB5E2429F91A009304BB /* EventResponseAreaChangeViewController.h */,
+				CA18AB5F2429F91A009304BB /* EventResponseAreaChangeViewController.m */,
+				CA18AB552429CFEC009304BB /* ViewB.h */,
+				CA18AB562429CFEC009304BB /* ViewB.m */,
+				CA18AB582429D015009304BB /* ViewA.h */,
+				CA18AB592429D015009304BB /* ViewA.m */,
+				CA18AB5B2429F741009304BB /* ViewC.h */,
+				CA18AB5C2429F741009304BB /* ViewC.m */,
+				CA18AB71242C8856009304BB /* AsyncRenderViewController.h */,
+				CA18AB72242C8856009304BB /* AsyncRenderViewController.m */,
+			);
+			path = uicomponent;
 			sourceTree = "<group>";
 		};
 		CAEE3470242507F0008AA006 /* multiThread */ = {
@@ -440,6 +498,7 @@
 				CA46CBF3241D19FD00EA7EBB /* MethodForward.m in Sources */,
 				CA46CC9A2421164E00EA7EBB /* CrashDefenderViewController.m in Sources */,
 				CA46CC08241DEFC800EA7EBB /* NSObject+Associated.m in Sources */,
+				CA18AB73242C8856009304BB /* AsyncRenderViewController.m in Sources */,
 				CAE87B9224277C230012CDDE /* Pthread.m in Sources */,
 				CAE87BA42427A5C50012CDDE /* NSConditionSample.m in Sources */,
 				CA46CBFC241DE91100EA7EBB /* MethodForward2.m in Sources */,
@@ -449,6 +508,8 @@
 				CA46CC13241FC59800EA7EBB /* ThreadKeepaliveViewController.m in Sources */,
 				CAE87B98242794A60012CDDE /* NSOpreationSample.m in Sources */,
 				CA46CBF6241DBE5100EA7EBB /* MethodSwizling.m in Sources */,
+				CA18AB5D2429F741009304BB /* ViewC.m in Sources */,
+				CA18AB572429CFEC009304BB /* ViewB.m in Sources */,
 				CA46CC9D242118CD00EA7EBB /* FluencyMonitor.m in Sources */,
 				CA46CBDC241BC07B00EA7EBB /* BlockTransmitViewController.m in Sources */,
 				CA46CBDF241BC3DE00EA7EBB /* BaseTableViewController.m in Sources */,
@@ -460,10 +521,17 @@
 				CA46CCA02421BB7400EA7EBB /* MemoryLeakViewController.m in Sources */,
 				CAEE34732425081E008AA006 /* GCDQueue.m in Sources */,
 				CA46CC16241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.m in Sources */,
+				CA18AB66242BA307009304BB /* TimerLeakViewController.m in Sources */,
+				CA18AB6F242C2A40009304BB /* UINavigationController+MemLeakFinder.m in Sources */,
 				CA46CC972421153200EA7EBB /* CrashDefender.m in Sources */,
 				CA46CBE2241BC9B800EA7EBB /* Block__blockViewController.m in Sources */,
+				CA18AB602429F91A009304BB /* EventResponseAreaChangeViewController.m in Sources */,
+				CAAED7A62428E642006C04C1 /* EventTransmitViewController.m in Sources */,
+				CA18AB5A2429D015009304BB /* ViewA.m in Sources */,
 				CA46CBCD241AFCC200EA7EBB /* BlockSource.m in Sources */,
+				CA18AB69242BA3ED009304BB /* CCProxy.m in Sources */,
 				CA55A851241AF55800FC581C /* HomeViewController.m in Sources */,
+				CA18AB6C242C2953009304BB /* NSObject+MethodSwizzling.m in Sources */,
 				CAE87B9B24279AFF0012CDDE /* NSLockSample.m in Sources */,
 				CA46CBEC241CAE2900EA7EBB /* BlockCycleRetainViewController.m in Sources */,
 				CA46CBE6241C6A3A00EA7EBB /* Block_TypeViewController.m in Sources */,

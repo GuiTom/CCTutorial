@@ -30,6 +30,7 @@
 #import "EventTransmitViewController.h"
 #import "EventResponseAreaChangeViewController.h"
 #import "TimerLeakViewController.h"
+#import "AsyncRenderViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -137,10 +138,8 @@ static NSString *cellId = @"cellID";
             [self.navigationController pushViewController:[EventTransmitViewController new] animated:YES];
         }else if([title isEqualToString:@"UI事件传递之改变事件响应区域"]){
             [self.navigationController pushViewController:[EventResponseAreaChangeViewController new] animated:YES];
-        }else if([title isEqualToString:@"响应者链"]){
-            
-        }else if([title isEqualToString:@"异步渲染"]){
-         
+        }else if([title isEqualToString:@"异步渲染(卡顿优化)"]){
+            [self.navigationController pushViewController:[AsyncRenderViewController new] animated:YES];
         }
     }
     else if([header isEqualToString:@"多线程"]){
