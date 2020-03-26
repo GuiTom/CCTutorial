@@ -27,11 +27,11 @@
     [self.view addSubview:imageView];
     self.imageView = imageView;
 
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{//进入子线程的全局并发队列里面去解压图片素材
         // 获取CGImage
         CGImageRef cgImage = [UIImage imageNamed:@"flag"].CGImage;//这里并不会开始界面
 
-        // alphaInfo
+        // 获取素材里面的透明读信息
         CGImageAlphaInfo alphaInfo = CGImageGetAlphaInfo(cgImage) & kCGBitmapAlphaInfoMask;
         BOOL hasAlpha = NO;
         if (alphaInfo == kCGImageAlphaPremultipliedLast ||
@@ -40,32 +40,26 @@
             alphaInfo == kCGImageAlphaFirst) {
             hasAlpha = YES;
         }
-
-        // bitmapInfo
+        //根据透明度信息构建解压后需要用到的的位图信息结构体
         CGBitmapInfo bitmapInfo = kCGBitmapByteOrder32Host;
         bitmapInfo |= hasAlpha ? kCGImageAlphaPremultipliedFirst : kCGImageAlphaNoneSkipFirst;
-
         // size
         size_t width = CGImageGetWidth(cgImage);
         size_t height = CGImageGetHeight(cgImage);
-
-        // context
+        // 创建一个图形上下文
         CGContextRef context = CGBitmapContextCreate(NULL, width, height, 8, 0, CGColorSpaceCreateDeviceRGB(), bitmapInfo);
-
-        // draw
+        // 把素材里面的信息绘制到上下文，同时也进行压缩格式文件(JPG/PNG)的解压工作
         CGContextDrawImage(context, CGRectMake(0, 0, width, height), cgImage);//这里才开始解码
 
-        // get CGImage,已经完成解码，获取图片
+        // 已经完成解码，获取解压后的位图图片信息
         cgImage = CGBitmapContextCreateImage(context);
-
-        // into UIImage
         UIImage *newImage = [UIImage imageWithCGImage:cgImage];
 
         // release
         CGContextRelease(context);
         CGImageRelease(cgImage);
 
-        // back to the main thread
+        // 将解压后的位图信息在主线程重交给图形控件来显示
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageView.image = newImage;
         });
