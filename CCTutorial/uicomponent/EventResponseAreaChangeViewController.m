@@ -17,11 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     ViewC *view = [[ViewC alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     view.backgroundColor = [UIColor redColor];
     [self.view addSubview:view];
     UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickViewC:)];
     [view addGestureRecognizer:tapGes];
+    view.clipsToBounds = NO;
+    
 }
 -(void)onClickViewC:(UITapGestureRecognizer*)tapGes{
      NSLog(@"%s %d",__FUNCTION__,__LINE__);
