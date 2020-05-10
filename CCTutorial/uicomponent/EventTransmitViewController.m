@@ -27,7 +27,7 @@
     
     UITapGestureRecognizer *tapGesA = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickViewA:)];
     UITapGestureRecognizer *tapGesB = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickViewB:)];
-//    [viewA addGestureRecognizer:tapGesA];
+    [viewA addGestureRecognizer:tapGesA];
     [viewB addGestureRecognizer:tapGesB];//
     [self.view addSubview:viewA];
     [viewA addSubview:viewB];
