@@ -31,6 +31,8 @@
 #import "EventResponseAreaChangeViewController.h"
 #import "TimerLeakViewController.h"
 #import "AsyncRenderViewController.h"
+#import "TableViewAutoSizeController.h"
+#import "RoundConerViewController.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -141,7 +143,11 @@ static NSString *cellId = @"cellID";
             [self.navigationController pushViewController:[EventResponseAreaChangeViewController new] animated:YES];
         }else if([title isEqualToString:@"异步渲染(卡顿优化)"]){
             [self.navigationController pushViewController:[AsyncRenderViewController new] animated:YES];
+        }else if([title isEqualToString:@"高性能加圆角"]){
+            
+            [self.navigationController pushViewController:[RoundConerViewController new] animated:YES];
         }
+            
     }
     else if([header isEqualToString:@"多线程"]){
         if([title isEqualToString:@"pthread"]){

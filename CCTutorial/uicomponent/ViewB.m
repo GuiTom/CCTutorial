@@ -44,4 +44,24 @@
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
     return [super pointInside:point withEvent:event];
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%s",__FUNCTION__);
+    //如果View 添加了点击事件，点击事件在这个方法之后调用
+    [super touchesBegan:touches withEvent:event];
+}
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+     NSLog(@"%s",__FUNCTION__);
+    //如果View 添加了点击事件，且有拖动，点击事件在这个方法之后调用
+}
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    //如果View 添加了点击事件，这里将不被调用
+     NSLog(@"%s",__FUNCTION__);
+}
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event{
+    NSLog(@"%s",__FUNCTION__);
+    UIImageView *imageView;
+
+}
+
 @end

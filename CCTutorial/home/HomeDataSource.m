@@ -31,6 +31,15 @@
     if(!_dataSource){
         _dataSource = @[
             @{
+                @"header":@"UI相关",
+                @"cells":@[
+                        @{@"title":@"UI事件传递内部实现"},
+                        @{@"title":@"UI事件传递之改变事件响应区域"},
+                        @{@"title":@"异步渲染(卡顿优化)"},
+                        @{@"title":@"高性能加圆角"},
+                        ]
+                },
+            @{
                 @"header":@"block相关",
                 @"cells":@[
                         @{@"title":@"block的本质"},
@@ -61,14 +70,7 @@
                           @{@"title":@"APP保活"},
                   ]
               },
-            @{
-                  @"header":@"UI相关",
-                  @"cells":@[
-                          @{@"title":@"UI事件传递内部实现"},
-                          @{@"title":@"UI事件传递之改变事件响应区域"},
-                          @{@"title":@"异步渲染(卡顿优化)"},
-                  ]
-              },
+
             @{
                   @"header":@"多线程",
                   @"cells":@[

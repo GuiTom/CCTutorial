@@ -17,8 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
     
     [self showImage2];
+
 }
 -(void)showImage1{
      NSDate *date = [NSDate date];

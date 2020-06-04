@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     ViewA *viewA = [[ViewA alloc] initWithFrame:CGRectMake(10, 100, 300, 200)];
-
+    
     viewA.backgroundColor = [UIColor redColor];
     ViewB *viewB = [[ViewB alloc] initWithFrame:CGRectMake(20, 10, 150, 200)];
     viewB.backgroundColor = [UIColor yellowColor];
@@ -27,10 +28,10 @@
     UITapGestureRecognizer *tapGesA = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickViewA:)];
     UITapGestureRecognizer *tapGesB = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickViewB:)];
     [viewA addGestureRecognizer:tapGesA];
-//    [viewB addGestureRecognizer:tapGesB];//
+    [viewB addGestureRecognizer:tapGesB];//
     [self.view addSubview:viewA];
     [viewA addSubview:viewB];
-    //思考题:为什么一个不加事件响应函数的UIButton 不可以事件穿透，而不加响应事件响应函数的UIView不可以事件穿透？
+    //思考题:为什么一个不加事件响应函数的UIButton 不可以事件穿透，而不加响应事件响应函数的UIView可以事件穿透？
   
 }
 -(void)onClickViewA:(UITapGestureRecognizer*)tapGes{

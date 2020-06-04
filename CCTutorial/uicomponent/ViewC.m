@@ -29,6 +29,7 @@ static float radius  = 100;
      CGContextSetLineWidth(ctx, 2);//线条宽度
      //渲染上下文
      CGContextStrokePath(ctx);
+    CFRelease(path);
 }
 
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{

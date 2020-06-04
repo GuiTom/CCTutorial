@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A346AA52467792B0022A309 /* TableViewAutoSizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA42467792B0022A309 /* TableViewAutoSizeController.m */; };
+		2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA7246788950022A309 /* RoundConerViewController.m */; };
 		CA18AB572429CFEC009304BB /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB562429CFEC009304BB /* ViewB.m */; };
 		CA18AB5A2429D015009304BB /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB592429D015009304BB /* ViewA.m */; };
 		CA18AB5D2429F741009304BB /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB5C2429F741009304BB /* ViewC.m */; };
@@ -71,6 +73,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A346AA32467792B0022A309 /* TableViewAutoSizeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewAutoSizeController.h; sourceTree = "<group>"; };
+		2A346AA42467792B0022A309 /* TableViewAutoSizeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAutoSizeController.m; sourceTree = "<group>"; };
+		2A346AA6246788950022A309 /* RoundConerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundConerViewController.h; sourceTree = "<group>"; };
+		2A346AA7246788950022A309 /* RoundConerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundConerViewController.m; sourceTree = "<group>"; };
 		CA18AB552429CFEC009304BB /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
 		CA18AB562429CFEC009304BB /* ViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
 		CA18AB582429D015009304BB /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
@@ -341,6 +347,10 @@
 				CA18AB5C2429F741009304BB /* ViewC.m */,
 				CA18AB71242C8856009304BB /* AsyncRenderViewController.h */,
 				CA18AB72242C8856009304BB /* AsyncRenderViewController.m */,
+				2A346AA32467792B0022A309 /* TableViewAutoSizeController.h */,
+				2A346AA42467792B0022A309 /* TableViewAutoSizeController.m */,
+				2A346AA6246788950022A309 /* RoundConerViewController.h */,
+				2A346AA7246788950022A309 /* RoundConerViewController.m */,
 			);
 			path = uicomponent;
 			sourceTree = "<group>";
@@ -528,9 +538,11 @@
 				CA18AB602429F91A009304BB /* EventResponseAreaChangeViewController.m in Sources */,
 				CAAED7A62428E642006C04C1 /* EventTransmitViewController.m in Sources */,
 				CA18AB5A2429D015009304BB /* ViewA.m in Sources */,
+				2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */,
 				CA46CBCD241AFCC200EA7EBB /* BlockSource.m in Sources */,
 				CA18AB69242BA3ED009304BB /* CCProxy.m in Sources */,
 				CA55A851241AF55800FC581C /* HomeViewController.m in Sources */,
+				2A346AA52467792B0022A309 /* TableViewAutoSizeController.m in Sources */,
 				CA18AB6C242C2953009304BB /* NSObject+MethodSwizzling.m in Sources */,
 				CAE87B9B24279AFF0012CDDE /* NSLockSample.m in Sources */,
 				CA46CBEC241CAE2900EA7EBB /* BlockCycleRetainViewController.m in Sources */,
@@ -696,14 +708,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8VYC267L9;
+				DEVELOPMENT_TEAM = 75F4CNH48F;
 				INFOPLIST_FILE = CCTutorial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cc.CCTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.directBankApp.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -714,14 +726,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K8VYC267L9;
+				DEVELOPMENT_TEAM = 75F4CNH48F;
 				INFOPLIST_FILE = CCTutorial/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cc.CCTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.directBankApp.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
