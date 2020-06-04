@@ -130,6 +130,7 @@ static NSString *cellId = @"cellID";
             [self.navigationController pushViewController:[TimeCountWhenScrollingViewController new] animated:YES];
         }else if([title isEqualToString:@"性能监测"]){
             [[FluencyMonitor shareMonitor] start];
+            sleep(3);
         }else if([title isEqualToString:@"APP保活"]){
             [self.navigationController pushViewController:[CrashDefenderViewController new] animated:YES];
         }
@@ -153,14 +154,26 @@ static NSString *cellId = @"cellID";
             [[GCDQueue alloc] mainQueue];
         }else if([title isEqualToString:@"GCD队列分类(自建串行队列)"]){
             [[GCDQueue alloc] serialQueue];
-        }else if([title isEqualToString:@"GCD队列分类(自建并发队列)"]){
-            [[GCDQueue alloc] concurrentQueue];
+        }else if([title isEqualToString:@"GCD队列分类(异步执行自建并发队列)"]){
+            [[GCDQueue alloc] asyncConcurrentQueue];
+        }else if([title isEqualToString:@"GCD队列分类(同步执行自建并发队列)"]){
+            [[GCDQueue alloc] syncConcurrentQueue];
+        }else if([title isEqualToString:@"GCD dispatch_group_notify"]){
+            [[GCDQueue alloc] dispatchGroupNotify];
+        }else if([title isEqualToString:@"GCD dispatch_group_wait"]){
+            [[GCDQueue alloc] dispatchGroupWait];
+        }else if([title isEqualToString:@"GCD dispatch_apply"]){
+            [[GCDQueue alloc] dispatchApply];
+        }else if([title isEqualToString:@"GCD dispatch_barrier_async"]){
+            [[GCDQueue alloc] dispatch_barrier_async];
         }else if([title isEqualToString:@"CGD异步"]){
             [[GCDQueue alloc] async];
         }else if([title isEqualToString:@"CGD同步"]){
             [[GCDQueue alloc] sync];
+        }else if([title isEqualToString:@"CGD暂停继续"]){
+            [[GCDQueue alloc] suspendAndResume];
         }else if([title isEqualToString:@"CGD队列死锁的例子"]){
-            [[GCDQueue alloc] deadLock];
+            [[GCDQueue alloc] deadLock2];
         }else if([title isEqualToString:@"线程同步之互斥锁"]){
             [[[NSLockSample alloc] init] test];
         }else if([title isEqualToString:@"线程同步之条件锁"]){

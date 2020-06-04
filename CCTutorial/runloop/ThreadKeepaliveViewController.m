@@ -23,6 +23,7 @@
 }
 -(void)run{
     // 只要往RunLoop里面添加Source\Timer\Observer中的任意一种，就能保持runloop不退出销毁
+    //NSPort 是 source 的一种
     [[NSRunLoop currentRunLoop] addPort:[NSPort new] forMode:NSRunLoopCommonModes];
     [[NSRunLoop currentRunLoop] run];
 }

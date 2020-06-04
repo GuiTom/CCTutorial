@@ -17,6 +17,7 @@
     if(self=[super init]){
         products = @[].mutableCopy;
         condition = [[NSCondition alloc] init];
+      
     }
     return self;
 }

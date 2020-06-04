@@ -15,7 +15,8 @@ static pthread_t thread = NULL;
     pthread_create(&thread, NULL, &myThread, "myThread");
 }
 void *myThread(void *data){
-    NSLog(@"pthread 线程");
+    NSLog(@"pthread 线程%@",[NSThread currentThread]);
+    
     pthread_exit(&thread);
 }
 

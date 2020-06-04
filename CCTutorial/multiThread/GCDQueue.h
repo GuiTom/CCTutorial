@@ -14,10 +14,17 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)globalQueue;
 -(void)mainQueue;
 -(void)serialQueue;
--(void)concurrentQueue;
+-(void)asyncConcurrentQueue;
 -(void)async;
+-(void)syncConcurrentQueue;
 -(void)sync;
--(void)deadLock;
+-(void)deadLock1;
+-(void)deadLock2;
+-(void)dispatchGroupNotify;
+-(void)dispatchGroupWait;
+-(void)dispatchApply;
+-(void)dispatch_barrier_async;
+-(void)suspendAndResume;
 @end
 
 NS_ASSUME_NONNULL_END

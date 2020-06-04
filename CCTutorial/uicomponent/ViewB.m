@@ -23,7 +23,7 @@
     }
     UIView *view = nil;
     if([self pointInside:point withEvent:event]){
-        
+
         NSArray *subViews = self.subviews;
         for(NSInteger i=subViews.count-1; i>0;i--) {
             UIView *subView = subViews[i];
@@ -38,6 +38,7 @@
         }
     }
     return view;
+   
     
 }
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{

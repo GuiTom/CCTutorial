@@ -102,7 +102,7 @@
             NSLog(@"第%d次 执行任务 %@",i+1,[NSThread currentThread]);
         }
     }];
-    
+
     [bo addExecutionBlock:^{
         for (int i = 0; i<5; i++) {
             NSLog(@"第%d次 执行额外任务 %@",i+1,[NSThread currentThread]);
@@ -121,7 +121,7 @@
     NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
       
         NSLog(@"这是子线程%@",[NSThread currentThread]);
-        [[NSOperationQueue mainQueue]addOperationWithBlock:^{
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             NSLog(@"回到主线程刷新UI%@",[NSThread currentThread]);
         }];
     }];
