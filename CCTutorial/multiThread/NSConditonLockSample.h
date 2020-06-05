@@ -1,8 +1,8 @@
 //
-//  NSThreadSample.h
+//  NSConditonLockSample.h
 //  CCTutorial
 //
-//  Created by CC on 2020/3/22.
+//  Created by Jerry Chen on 2020/6/5.
 //  Copyright © 2020 kayak. All rights reserved.
 //
 
@@ -10,11 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSThreadSample : NSObject
+@interface NSConditonLockSample : NSObject
 -(void)test;
--(void)test2;
--(void)test3;
--(void)test4;
 @end
 
 NS_ASSUME_NONNULL_END

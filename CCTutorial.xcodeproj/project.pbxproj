@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A346AA52467792B0022A309 /* TableViewAutoSizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA42467792B0022A309 /* TableViewAutoSizeController.m */; };
 		2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA7246788950022A309 /* RoundConerViewController.m */; };
+		2C2B0707248A31CA009EC245 /* NSConditonLockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */; };
 		CA18AB572429CFEC009304BB /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB562429CFEC009304BB /* ViewB.m */; };
 		CA18AB5A2429D015009304BB /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB592429D015009304BB /* ViewA.m */; };
 		CA18AB5D2429F741009304BB /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB5C2429F741009304BB /* ViewC.m */; };
@@ -77,6 +78,8 @@
 		2A346AA42467792B0022A309 /* TableViewAutoSizeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAutoSizeController.m; sourceTree = "<group>"; };
 		2A346AA6246788950022A309 /* RoundConerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundConerViewController.h; sourceTree = "<group>"; };
 		2A346AA7246788950022A309 /* RoundConerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundConerViewController.m; sourceTree = "<group>"; };
+		2C2B0705248A31CA009EC245 /* NSConditonLockSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditonLockSample.h; sourceTree = "<group>"; };
+		2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditonLockSample.m; sourceTree = "<group>"; };
 		CA18AB552429CFEC009304BB /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
 		CA18AB562429CFEC009304BB /* ViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
 		CA18AB582429D015009304BB /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
@@ -372,6 +375,8 @@
 				CAE87B9D24279FCC0012CDDE /* SemaphoreSample.m */,
 				CAE87BA22427A5C50012CDDE /* NSConditionSample.h */,
 				CAE87BA32427A5C50012CDDE /* NSConditionSample.m */,
+				2C2B0705248A31CA009EC245 /* NSConditonLockSample.h */,
+				2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */,
 			);
 			path = multiThread;
 			sourceTree = "<group>";
@@ -539,6 +544,7 @@
 				CAAED7A62428E642006C04C1 /* EventTransmitViewController.m in Sources */,
 				CA18AB5A2429D015009304BB /* ViewA.m in Sources */,
 				2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */,
+				2C2B0707248A31CA009EC245 /* NSConditonLockSample.m in Sources */,
 				CA46CBCD241AFCC200EA7EBB /* BlockSource.m in Sources */,
 				CA18AB69242BA3ED009304BB /* CCProxy.m in Sources */,
 				CA55A851241AF55800FC581C /* HomeViewController.m in Sources */,
@@ -707,16 +713,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 75F4CNH48F;
 				INFOPLIST_FILE = CCTutorial/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.directBankApp.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "LF-廊坊调试";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -725,16 +733,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 75F4CNH48F;
 				INFOPLIST_FILE = CCTutorial/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.directBankApp.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "LF-廊坊调试";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

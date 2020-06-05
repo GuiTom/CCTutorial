@@ -10,7 +10,7 @@
 
 @implementation NSOpreationSample
 /**
- 开启一个线程任务
+ 开启一个任务,不会开辟新的线程
  */
 -(void)test{
     NSInvocationOperation *io = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(InvocationOperationSelector) object:nil];
@@ -20,29 +20,29 @@
     NSLog(@"这是NSInvocationOperation执行的任务   %@",[NSThread currentThread]);
 }
 /**
- 添加任务
+ 添加任务,开不开启新线程由系统决定
  */
 -(void)test2{
     NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
-        for (int i = 0; i<2; i++) {
+     
             [NSThread sleepForTimeInterval:2];
-            NSLog(@"这是NSBlockOperation执行的任务 %@",[NSThread currentThread]);
+            NSLog(@"这是NSBlockOperation执行的任务1 %@",[NSThread currentThread]);
             NSLog(@"本行是否在block里面运行，取决于NSBlockOperation对象里面有多少任务");
-        }
+        
     }];
     
     [bo addExecutionBlock:^{
-        for (int i = 0; i<2; i++) {
-            [NSThread sleepForTimeInterval:2];
-            NSLog(@"这是让NSBlockOperation另外执行的任务 %@",[NSThread currentThread]);
-            NSLog(@"本行是否在block里面运行，取决于NSBlockOperation对象里面有多少任务");
-        }
-    }];
-    
-    [bo addExecutionBlock:^{
-        for (int i = 0; i<2; i++) {
+      
             [NSThread sleepForTimeInterval:2];
             NSLog(@"这是让NSBlockOperation另外执行的任务2 %@",[NSThread currentThread]);
+            NSLog(@"本行是否在block里面运行，取决于NSBlockOperation对象里面有多少任务");
+        
+    }];
+    
+    [bo addExecutionBlock:^{
+        for (int i = 0; i<2; i++) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"这是让NSBlockOperation另外执行的任务3 %@",[NSThread currentThread]);
             NSLog(@"本行是否在block里面运行，取决于NSBlockOperation对象里面有多少任务");
         }
     }];
@@ -62,13 +62,15 @@
              NSLog(@"这是NSBlockOperation执行的任务 %@",[NSThread currentThread]);
          }
      }];
+      [queue addOperation:bo];
      [queue addOperation:io];
-     [queue addOperation:bo];
+   
 }
 /**
  线程顺序执行
  */
 -(void)test4{
+    
     NSOperationQueue *queue = [[NSOperationQueue alloc]init];
 
     NSBlockOperation *bo1 = [NSBlockOperation blockOperationWithBlock:^{

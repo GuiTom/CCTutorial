@@ -33,6 +33,7 @@
 #import "AsyncRenderViewController.h"
 #import "TableViewAutoSizeController.h"
 #import "RoundConerViewController.h"
+#import "NSConditonLockSample.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -153,7 +154,7 @@ static NSString *cellId = @"cellID";
         if([title isEqualToString:@"pthread"]){
             [[Pthread alloc] test1];
         }if([title isEqualToString:@"NSThread"]){
-            [[[NSThreadSample alloc] init] test];
+            [[[NSThreadSample alloc] init] test3];
         }else if([title isEqualToString:@"GCD队列分类(全局并发队列)"]){
             [[GCDQueue alloc] globalQueue];
         }else if([title isEqualToString:@"GCD队列分类(主串行队列)"]){
@@ -182,15 +183,16 @@ static NSString *cellId = @"cellID";
             [[GCDQueue alloc] deadLock2];
         }else if([title isEqualToString:@"线程同步之互斥锁"]){
             [[[NSLockSample alloc] init] test];
-        }else if([title isEqualToString:@"线程同步之条件锁"]){
+        }else if([title isEqualToString:@"线程同步之条件锁NSCondition"]){
             [[[NSConditionSample alloc] init] test];
+        }else if([title isEqualToString:@"线程同步之条件锁NSConditionLock"]){
+            [[[NSConditonLockSample alloc] init] test];
         }else if([title isEqualToString:@"线程同步之信号量"]){
             [[[SemaphoreSample alloc] init] test];
         }else if([title isEqualToString:@"NSOpreation"]){
-            [[[NSOpreationSample alloc] init] test];
+            [[[NSOpreationSample alloc] init] test4];
         }
     }
 }
-
 
 @end
