@@ -133,7 +133,11 @@ static NSString *cellId = @"cellID";
             [self.navigationController pushViewController:[TimeCountWhenScrollingViewController new] animated:YES];
         }else if([title isEqualToString:@"性能监测"]){
             [[FluencyMonitor shareMonitor] start];
-            sleep(3);
+            
+
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                sleep(3);
+            });
         }else if([title isEqualToString:@"APP保活"]){
             [self.navigationController pushViewController:[CrashDefenderViewController new] animated:YES];
         }

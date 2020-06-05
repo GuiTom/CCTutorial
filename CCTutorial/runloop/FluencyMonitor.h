@@ -13,14 +13,6 @@
 + (instancetype)shareMonitor;
 
 
-/**
- 开始监控
-
- @param interval 定时器间隔时间
- @param fault 卡顿的阙值
- */
-- (void)startWithInterval:(NSTimeInterval)interval fault:(NSTimeInterval)fault;
-
 
 /**
  开始监控
