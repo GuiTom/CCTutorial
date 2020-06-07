@@ -10,6 +10,10 @@
 		2A346AA52467792B0022A309 /* TableViewAutoSizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA42467792B0022A309 /* TableViewAutoSizeController.m */; };
 		2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA7246788950022A309 /* RoundConerViewController.m */; };
 		2C2B0707248A31CA009EC245 /* NSConditonLockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */; };
+		2C2B070F248A40D1009EC245 /* BacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B070D248A40D1009EC245 /* BacktraceLogger.m */; };
+		2CF8CA46248CDE230081EA4A /* MachPortCommulicationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA45248CDE230081EA4A /* MachPortCommulicationVC.m */; };
+		2CF8CA49248CEAA80081EA4A /* MachPortWorkerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */; };
+		2CF8CA4C248CF3790081EA4A /* FluencyMonitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA4B248CF3790081EA4A /* FluencyMonitorVC.m */; };
 		CA18AB572429CFEC009304BB /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB562429CFEC009304BB /* ViewB.m */; };
 		CA18AB5A2429D015009304BB /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB592429D015009304BB /* ViewA.m */; };
 		CA18AB5D2429F741009304BB /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB5C2429F741009304BB /* ViewC.m */; };
@@ -35,7 +39,6 @@
 		CA46CC16241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC15241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.m */; };
 		CA46CC972421153200EA7EBB /* CrashDefender.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC962421153200EA7EBB /* CrashDefender.m */; };
 		CA46CC9A2421164E00EA7EBB /* CrashDefenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC992421164E00EA7EBB /* CrashDefenderViewController.m */; };
-		CA46CC9D242118CD00EA7EBB /* FluencyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC9C242118CD00EA7EBB /* FluencyMonitor.m */; };
 		CA46CCA02421BB7400EA7EBB /* MemoryLeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CC9F2421BB7400EA7EBB /* MemoryLeakViewController.m */; };
 		CA46CCAC2421C17700EA7EBB /* UIViewController+MemLeakFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CCAB2421C17700EA7EBB /* UIViewController+MemLeakFinder.m */; };
 		CA55A818241AF47C00FC581C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA55A817241AF47C00FC581C /* AppDelegate.m */; };
@@ -80,6 +83,14 @@
 		2A346AA7246788950022A309 /* RoundConerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundConerViewController.m; sourceTree = "<group>"; };
 		2C2B0705248A31CA009EC245 /* NSConditonLockSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditonLockSample.h; sourceTree = "<group>"; };
 		2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditonLockSample.m; sourceTree = "<group>"; };
+		2C2B070D248A40D1009EC245 /* BacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BacktraceLogger.m; sourceTree = "<group>"; };
+		2C2B070E248A40D1009EC245 /* BacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BacktraceLogger.h; sourceTree = "<group>"; };
+		2CF8CA44248CDE230081EA4A /* MachPortCommulicationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortCommulicationVC.h; sourceTree = "<group>"; };
+		2CF8CA45248CDE230081EA4A /* MachPortCommulicationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachPortCommulicationVC.m; sourceTree = "<group>"; };
+		2CF8CA47248CEAA80081EA4A /* MachPortWorkerClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortWorkerClass.h; sourceTree = "<group>"; };
+		2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachPortWorkerClass.m; sourceTree = "<group>"; };
+		2CF8CA4A248CF3790081EA4A /* FluencyMonitorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FluencyMonitorVC.h; sourceTree = "<group>"; };
+		2CF8CA4B248CF3790081EA4A /* FluencyMonitorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FluencyMonitorVC.m; sourceTree = "<group>"; };
 		CA18AB552429CFEC009304BB /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
 		CA18AB562429CFEC009304BB /* ViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
 		CA18AB582429D015009304BB /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
@@ -132,8 +143,6 @@
 		CA46CC962421153200EA7EBB /* CrashDefender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashDefender.m; sourceTree = "<group>"; };
 		CA46CC982421164E00EA7EBB /* CrashDefenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashDefenderViewController.h; sourceTree = "<group>"; };
 		CA46CC992421164E00EA7EBB /* CrashDefenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashDefenderViewController.m; sourceTree = "<group>"; };
-		CA46CC9B242118CD00EA7EBB /* FluencyMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluencyMonitor.h; sourceTree = "<group>"; };
-		CA46CC9C242118CD00EA7EBB /* FluencyMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluencyMonitor.m; sourceTree = "<group>"; };
 		CA46CC9E2421BB7400EA7EBB /* MemoryLeakViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLeakViewController.h; sourceTree = "<group>"; };
 		CA46CC9F2421BB7400EA7EBB /* MemoryLeakViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLeakViewController.m; sourceTree = "<group>"; };
 		CA46CCAA2421C17700EA7EBB /* UIViewController+MemLeakFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemLeakFinder.h"; sourceTree = "<group>"; };
@@ -198,6 +207,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2B070C248A40D1009EC245 /* backtrace */ = {
+			isa = PBXGroup;
+			children = (
+				2C2B070D248A40D1009EC245 /* BacktraceLogger.m */,
+				2C2B070E248A40D1009EC245 /* BacktraceLogger.h */,
+			);
+			path = backtrace;
+			sourceTree = "<group>";
+		};
 		CA46CBCA241AFC8700EA7EBB /* block */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,16 +269,17 @@
 		CA46CC0D241FC53D00EA7EBB /* runloop */ = {
 			isa = PBXGroup;
 			children = (
+				2C2B070C248A40D1009EC245 /* backtrace */,
 				CA46CC952421153200EA7EBB /* CrashDefender.h */,
 				CA46CC962421153200EA7EBB /* CrashDefender.m */,
-				CA46CC9B242118CD00EA7EBB /* FluencyMonitor.h */,
-				CA46CC9C242118CD00EA7EBB /* FluencyMonitor.m */,
 				CA46CC11241FC59800EA7EBB /* ThreadKeepaliveViewController.h */,
 				CA46CC12241FC59800EA7EBB /* ThreadKeepaliveViewController.m */,
 				CA46CC14241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.h */,
 				CA46CC15241FC9F600EA7EBB /* TimeCountWhenScrollingViewController.m */,
 				CA46CC982421164E00EA7EBB /* CrashDefenderViewController.h */,
 				CA46CC992421164E00EA7EBB /* CrashDefenderViewController.m */,
+				2CF8CA4A248CF3790081EA4A /* FluencyMonitorVC.h */,
+				2CF8CA4B248CF3790081EA4A /* FluencyMonitorVC.m */,
 			);
 			path = runloop;
 			sourceTree = "<group>";
@@ -377,6 +396,10 @@
 				CAE87BA32427A5C50012CDDE /* NSConditionSample.m */,
 				2C2B0705248A31CA009EC245 /* NSConditonLockSample.h */,
 				2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */,
+				2CF8CA44248CDE230081EA4A /* MachPortCommulicationVC.h */,
+				2CF8CA45248CDE230081EA4A /* MachPortCommulicationVC.m */,
+				2CF8CA47248CEAA80081EA4A /* MachPortWorkerClass.h */,
+				2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */,
 			);
 			path = multiThread;
 			sourceTree = "<group>";
@@ -525,9 +548,9 @@
 				CA46CBF6241DBE5100EA7EBB /* MethodSwizling.m in Sources */,
 				CA18AB5D2429F741009304BB /* ViewC.m in Sources */,
 				CA18AB572429CFEC009304BB /* ViewB.m in Sources */,
-				CA46CC9D242118CD00EA7EBB /* FluencyMonitor.m in Sources */,
 				CA46CBDC241BC07B00EA7EBB /* BlockTransmitViewController.m in Sources */,
 				CA46CBDF241BC3DE00EA7EBB /* BaseTableViewController.m in Sources */,
+				2CF8CA49248CEAA80081EA4A /* MachPortWorkerClass.m in Sources */,
 				CA55A818241AF47C00FC581C /* AppDelegate.m in Sources */,
 				CAE87B95242791EC0012CDDE /* NSThreadSample.m in Sources */,
 				CA46CCAC2421C17700EA7EBB /* UIViewController+MemLeakFinder.m in Sources */,
@@ -540,8 +563,10 @@
 				CA18AB6F242C2A40009304BB /* UINavigationController+MemLeakFinder.m in Sources */,
 				CA46CC972421153200EA7EBB /* CrashDefender.m in Sources */,
 				CA46CBE2241BC9B800EA7EBB /* Block__blockViewController.m in Sources */,
+				2CF8CA46248CDE230081EA4A /* MachPortCommulicationVC.m in Sources */,
 				CA18AB602429F91A009304BB /* EventResponseAreaChangeViewController.m in Sources */,
 				CAAED7A62428E642006C04C1 /* EventTransmitViewController.m in Sources */,
+				2C2B070F248A40D1009EC245 /* BacktraceLogger.m in Sources */,
 				CA18AB5A2429D015009304BB /* ViewA.m in Sources */,
 				2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */,
 				2C2B0707248A31CA009EC245 /* NSConditonLockSample.m in Sources */,
@@ -552,6 +577,7 @@
 				CA18AB6C242C2953009304BB /* NSObject+MethodSwizzling.m in Sources */,
 				CAE87B9B24279AFF0012CDDE /* NSLockSample.m in Sources */,
 				CA46CBEC241CAE2900EA7EBB /* BlockCycleRetainViewController.m in Sources */,
+				2CF8CA4C248CF3790081EA4A /* FluencyMonitorVC.m in Sources */,
 				CA46CBE6241C6A3A00EA7EBB /* Block_TypeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

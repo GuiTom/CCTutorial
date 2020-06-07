@@ -18,7 +18,7 @@
 #import "ThreadKeepaliveViewController.h"
 #import "TimeCountWhenScrollingViewController.h"
 #import "CrashDefenderViewController.h"
-#import "FluencyMonitor.h"
+#import "FluencyMonitorVC.h"
 #import "MemoryLeakViewController.h"
 #import "GCDQueue.h"
 #import "Pthread.h"
@@ -34,6 +34,7 @@
 #import "TableViewAutoSizeController.h"
 #import "RoundConerViewController.h"
 #import "NSConditonLockSample.h"
+#import "MachPortCommulicationVC.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -132,13 +133,10 @@ static NSString *cellId = @"cellID";
         }else if([title isEqualToString:@"边滑动边计时"]){
             [self.navigationController pushViewController:[TimeCountWhenScrollingViewController new] animated:YES];
         }else if([title isEqualToString:@"性能监测"]){
-            [[FluencyMonitor shareMonitor] start];
-            
-
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                sleep(3);
-            });
+           
+            [self.navigationController pushViewController:[FluencyMonitorVC new] animated:YES];
         }else if([title isEqualToString:@"APP保活"]){
+//             sleep(3);
             [self.navigationController pushViewController:[CrashDefenderViewController new] animated:YES];
         }
     }else if([header isEqualToString:@"UI相关"]){
@@ -195,6 +193,8 @@ static NSString *cellId = @"cellID";
             [[[SemaphoreSample alloc] init] test];
         }else if([title isEqualToString:@"NSOpreation"]){
             [[[NSOpreationSample alloc] init] test4];
+        }else if([title isEqualToString:@"线程通信之NSPort"]){
+            [self.navigationController pushViewController:[MachPortCommulicationVC new] animated:YES];
         }
     }
 }
