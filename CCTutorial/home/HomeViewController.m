@@ -35,6 +35,8 @@
 #import "RoundConerViewController.h"
 #import "NSConditonLockSample.h"
 #import "MachPortCommulicationVC.h"
+#import "OSUnfairLock.h"
+#import "RecursiveLockSample.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *table;
 
@@ -183,8 +185,12 @@ static NSString *cellId = @"cellID";
             [[GCDQueue alloc] suspendAndResume];
         }else if([title isEqualToString:@"CGD队列死锁的例子"]){
             [[GCDQueue alloc] deadLock2];
-        }else if([title isEqualToString:@"线程同步之互斥锁"]){
+        }else if([title isEqualToString:@"线程同步之互斥锁NSLock"]){
             [[[NSLockSample alloc] init] test];
+        }else if([title isEqualToString:@"线程同步之互斥锁os_unfair_lock"]){
+            [[[OSUnfairLock alloc] init] test];
+        }else if([title isEqualToString:@"线程同步之递归锁RecursiveLock"]){
+            [[[RecursiveLockSample alloc] init] test];
         }else if([title isEqualToString:@"线程同步之条件锁NSCondition"]){
             [[[NSConditionSample alloc] init] test];
         }else if([title isEqualToString:@"线程同步之条件锁NSConditionLock"]){

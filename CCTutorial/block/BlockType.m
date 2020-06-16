@@ -18,7 +18,6 @@
     NSLog(@"block2 class: %@", NSStringFromClass([^{} class]));//全局block
     //2.访问外部变量的block为栈block
     int x = 1;
-    
     NSLog(@"block3 class: %@", NSStringFromClass([^{
         NSLog(@"%d",x);
     } class]));//栈block

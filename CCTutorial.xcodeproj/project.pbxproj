@@ -11,9 +11,11 @@
 		2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA7246788950022A309 /* RoundConerViewController.m */; };
 		2C2B0707248A31CA009EC245 /* NSConditonLockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */; };
 		2C2B070F248A40D1009EC245 /* BacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B070D248A40D1009EC245 /* BacktraceLogger.m */; };
+		2CDDAA842497AD9D001BA44A /* RecursiveLockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDDAA832497AD9D001BA44A /* RecursiveLockSample.m */; };
 		2CF8CA46248CDE230081EA4A /* MachPortCommulicationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA45248CDE230081EA4A /* MachPortCommulicationVC.m */; };
 		2CF8CA49248CEAA80081EA4A /* MachPortWorkerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */; };
 		2CF8CA4C248CF3790081EA4A /* FluencyMonitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA4B248CF3790081EA4A /* FluencyMonitorVC.m */; };
+		2CF8CA52248D18DB0081EA4A /* OSUnfairLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA51248D18DB0081EA4A /* OSUnfairLock.m */; };
 		CA18AB572429CFEC009304BB /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB562429CFEC009304BB /* ViewB.m */; };
 		CA18AB5A2429D015009304BB /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB592429D015009304BB /* ViewA.m */; };
 		CA18AB5D2429F741009304BB /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = CA18AB5C2429F741009304BB /* ViewC.m */; };
@@ -85,12 +87,16 @@
 		2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditonLockSample.m; sourceTree = "<group>"; };
 		2C2B070D248A40D1009EC245 /* BacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BacktraceLogger.m; sourceTree = "<group>"; };
 		2C2B070E248A40D1009EC245 /* BacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BacktraceLogger.h; sourceTree = "<group>"; };
+		2CDDAA822497AD9D001BA44A /* RecursiveLockSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecursiveLockSample.h; sourceTree = "<group>"; };
+		2CDDAA832497AD9D001BA44A /* RecursiveLockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecursiveLockSample.m; sourceTree = "<group>"; };
 		2CF8CA44248CDE230081EA4A /* MachPortCommulicationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortCommulicationVC.h; sourceTree = "<group>"; };
 		2CF8CA45248CDE230081EA4A /* MachPortCommulicationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachPortCommulicationVC.m; sourceTree = "<group>"; };
 		2CF8CA47248CEAA80081EA4A /* MachPortWorkerClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortWorkerClass.h; sourceTree = "<group>"; };
 		2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachPortWorkerClass.m; sourceTree = "<group>"; };
 		2CF8CA4A248CF3790081EA4A /* FluencyMonitorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FluencyMonitorVC.h; sourceTree = "<group>"; };
 		2CF8CA4B248CF3790081EA4A /* FluencyMonitorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FluencyMonitorVC.m; sourceTree = "<group>"; };
+		2CF8CA50248D18DB0081EA4A /* OSUnfairLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLock.h; sourceTree = "<group>"; };
+		2CF8CA51248D18DB0081EA4A /* OSUnfairLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLock.m; sourceTree = "<group>"; };
 		CA18AB552429CFEC009304BB /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
 		CA18AB562429CFEC009304BB /* ViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
 		CA18AB582429D015009304BB /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
@@ -394,12 +400,16 @@
 				CAE87B9D24279FCC0012CDDE /* SemaphoreSample.m */,
 				CAE87BA22427A5C50012CDDE /* NSConditionSample.h */,
 				CAE87BA32427A5C50012CDDE /* NSConditionSample.m */,
+				2CF8CA50248D18DB0081EA4A /* OSUnfairLock.h */,
+				2CF8CA51248D18DB0081EA4A /* OSUnfairLock.m */,
 				2C2B0705248A31CA009EC245 /* NSConditonLockSample.h */,
 				2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */,
 				2CF8CA44248CDE230081EA4A /* MachPortCommulicationVC.h */,
 				2CF8CA45248CDE230081EA4A /* MachPortCommulicationVC.m */,
 				2CF8CA47248CEAA80081EA4A /* MachPortWorkerClass.h */,
 				2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */,
+				2CDDAA822497AD9D001BA44A /* RecursiveLockSample.h */,
+				2CDDAA832497AD9D001BA44A /* RecursiveLockSample.m */,
 			);
 			path = multiThread;
 			sourceTree = "<group>";
@@ -568,11 +578,13 @@
 				CAAED7A62428E642006C04C1 /* EventTransmitViewController.m in Sources */,
 				2C2B070F248A40D1009EC245 /* BacktraceLogger.m in Sources */,
 				CA18AB5A2429D015009304BB /* ViewA.m in Sources */,
+				2CDDAA842497AD9D001BA44A /* RecursiveLockSample.m in Sources */,
 				2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */,
 				2C2B0707248A31CA009EC245 /* NSConditonLockSample.m in Sources */,
 				CA46CBCD241AFCC200EA7EBB /* BlockSource.m in Sources */,
 				CA18AB69242BA3ED009304BB /* CCProxy.m in Sources */,
 				CA55A851241AF55800FC581C /* HomeViewController.m in Sources */,
+				2CF8CA52248D18DB0081EA4A /* OSUnfairLock.m in Sources */,
 				2A346AA52467792B0022A309 /* TableViewAutoSizeController.m in Sources */,
 				CA18AB6C242C2953009304BB /* NSObject+MethodSwizzling.m in Sources */,
 				CAE87B9B24279AFF0012CDDE /* NSLockSample.m in Sources */,
