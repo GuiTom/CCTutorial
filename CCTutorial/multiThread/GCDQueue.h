@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)mainQueue;
 -(void)serialQueue;
 -(void)asyncConcurrentQueue;
+-(void)asyncConcurrentQueue2;
 -(void)async;
 -(void)syncConcurrentQueue;
 -(void)sync;
@@ -24,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)dispatchGroupWait;
 -(void)dispatchApply;
 -(void)dispatch_barrier_async;
+
+-(void)dispatch_barrier_async_read_write;
 -(void)suspendAndResume;
 @end
 

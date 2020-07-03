@@ -18,6 +18,7 @@ void *myThread(void *data){
     NSLog(@"pthread 线程%@",[NSThread currentThread]);
     
     pthread_exit(&thread);
+    
 }
 
 @end
