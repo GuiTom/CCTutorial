@@ -49,4 +49,31 @@
         });
     }
 }
+
+/**
+ 线程交替执行
+ */
+-(void)test{
+    dispatch_semaphore_t sema = dispatch_semaphore_create(1);
+    dispatch_queue_t queue1 = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue1, ^{
+        while (1) {
+            NSLog(@"任务1准备获取信号量");
+            dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+            NSLog(@"任务1获得信号量");
+            dispatch_semaphore_signal(sema);
+        }
+    });
+    dispatch_queue_t queue2 = dispatch_queue_create("queue2", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue2, ^{
+        while (1) {
+            NSLog(@"任务2准备获取信号量");
+            dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+            NSLog(@"任务2获得信号量");
+            dispatch_semaphore_signal(sema);
+        }
+    });
+
+}
+
 @end

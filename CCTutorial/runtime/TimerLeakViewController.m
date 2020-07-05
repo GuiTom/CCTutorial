@@ -28,6 +28,7 @@
         self.timer = [NSTimer timerWithTimeInterval:1.0f target:proxy selector:@selector(test1) userInfo:nil repeats:YES];
     
     }
+    //RunLoop会对timer强引用
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     //操作提示
     UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 300, 30)];
@@ -42,7 +43,8 @@
 }
 -(void)dealloc{
     NSLog(@"%s",__FUNCTION__);
-    [self.timer invalidate];
+    [self.timer invalidate];//将timer从NSRunloop中移除了
+    
 }
 /*
 #pragma mark - Navigation

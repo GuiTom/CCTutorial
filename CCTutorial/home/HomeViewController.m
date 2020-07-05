@@ -176,7 +176,7 @@ static NSString *cellId = @"cellID";
         }else if([title isEqualToString:@"GCD dispatch_apply"]){
             [[GCDQueue alloc] dispatchApply];
         }else if([title isEqualToString:@"GCD dispatch_barrier_async"]){
-            [[GCDQueue alloc] dispatch_barrier_async];
+            [[GCDQueue alloc] dispatch_barrier_async_read_write];
         }else if([title isEqualToString:@"CGD异步"]){
             [[GCDQueue alloc] async];
         }else if([title isEqualToString:@"CGD同步"]){

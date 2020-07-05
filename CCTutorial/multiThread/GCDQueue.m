@@ -57,11 +57,26 @@
     
     for (int i=0; i<5; i++) {
         dispatch_async(queue, ^{
-              NSLog(@"不分先后地执行 %i %p %p",i,[NSThread currentThread],[NSThread mainThread]);
+              NSLog(@"不分先后地执行 %i %p",i,[NSThread currentThread]);
         });
     }
     NSLog(@"执行任务2");
 }
+/**
+异步执行，并发队列
+*/
+-(void)asyncConcurrentQueue2{
+    NSLog(@"%p",[NSThread currentThread]);
+    dispatch_queue_t queue1 = dispatch_queue_create("queue1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue2 = dispatch_queue_create("queue2", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue1, ^{
+        NSLog(@"%p",[NSThread currentThread]);
+        dispatch_async(queue2,^{
+            NSLog(@"%p",[NSThread currentThread]);
+        });
+    });
+}
+
 -(void)async{
     dispatch_queue_t queue = dispatch_queue_create("queue1", DISPATCH_QUEUE_SERIAL);
     dispatch_async(queue, ^{
@@ -224,7 +239,7 @@
     NSLog(@"任务执行完毕");
 }
 /**
- 栅栏调用
+ 异步栅栏调用1
  */
 -(void)dispatch_barrier_async{
     dispatch_queue_t queue = dispatch_queue_create("barrier", DISPATCH_QUEUE_CONCURRENT);
@@ -238,15 +253,40 @@
     dispatch_async(queue, ^{
         NSLog(@"3 value is: %ld",(long)value);
     });
-    dispatch_barrier_sync(queue, ^{
+    dispatch_barrier_async(queue, ^{
         value = 2;
-        
     });
+     
+
+    NSLog(@"A");
     dispatch_async(queue, ^{
         NSLog(@"4 value is: %ld",(long)value);
     });
+    NSLog(@"B");
     dispatch_async(queue, ^{
         NSLog(@"5 value is: %ld",(long)value);
     });
+    NSLog(@"C");
+}
+
+/**
+ 异步栅栏调用2  多读单写
+ */
+-(void)dispatch_barrier_async_read_write{
+    dispatch_queue_t queue = dispatch_queue_create("barrier", DISPATCH_QUEUE_CONCURRENT);
+    __block NSString* strValue = 0;
+    int count = 1;
+    while (1) {
+        if(count++%5){
+            dispatch_async(queue, ^{
+                NSLog(@"read strValue is: %@",strValue);
+            });
+        }else {
+            dispatch_barrier_async(queue, ^{
+                strValue = @"abc";
+                NSLog(@"writre strValue to:%@",strValue);
+            });
+        }
+    }
 }
 @end

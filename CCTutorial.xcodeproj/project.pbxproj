@@ -11,6 +11,8 @@
 		2A346AA8246788950022A309 /* RoundConerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A346AA7246788950022A309 /* RoundConerViewController.m */; };
 		2C2B0707248A31CA009EC245 /* NSConditonLockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */; };
 		2C2B070F248A40D1009EC245 /* BacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B070D248A40D1009EC245 /* BacktraceLogger.m */; };
+		2CAF7EF924A6C7A900DB90D7 /* Dispatch_barrier_async_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF7EF824A6C7A900DB90D7 /* Dispatch_barrier_async_VC.m */; };
+		2CAF7EFF24A6CD1500DB90D7 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF7EFE24A6CD1500DB90D7 /* DataManager.m */; };
 		2CDDAA842497AD9D001BA44A /* RecursiveLockSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDDAA832497AD9D001BA44A /* RecursiveLockSample.m */; };
 		2CF8CA46248CDE230081EA4A /* MachPortCommulicationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA45248CDE230081EA4A /* MachPortCommulicationVC.m */; };
 		2CF8CA49248CEAA80081EA4A /* MachPortWorkerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */; };
@@ -87,6 +89,10 @@
 		2C2B0706248A31CA009EC245 /* NSConditonLockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditonLockSample.m; sourceTree = "<group>"; };
 		2C2B070D248A40D1009EC245 /* BacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BacktraceLogger.m; sourceTree = "<group>"; };
 		2C2B070E248A40D1009EC245 /* BacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BacktraceLogger.h; sourceTree = "<group>"; };
+		2CAF7EF724A6C7A900DB90D7 /* Dispatch_barrier_async_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dispatch_barrier_async_VC.h; sourceTree = "<group>"; };
+		2CAF7EF824A6C7A900DB90D7 /* Dispatch_barrier_async_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dispatch_barrier_async_VC.m; sourceTree = "<group>"; };
+		2CAF7EFD24A6CD1500DB90D7 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		2CAF7EFE24A6CD1500DB90D7 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		2CDDAA822497AD9D001BA44A /* RecursiveLockSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecursiveLockSample.h; sourceTree = "<group>"; };
 		2CDDAA832497AD9D001BA44A /* RecursiveLockSample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecursiveLockSample.m; sourceTree = "<group>"; };
 		2CF8CA44248CDE230081EA4A /* MachPortCommulicationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachPortCommulicationVC.h; sourceTree = "<group>"; };
@@ -410,6 +416,10 @@
 				2CF8CA48248CEAA80081EA4A /* MachPortWorkerClass.m */,
 				2CDDAA822497AD9D001BA44A /* RecursiveLockSample.h */,
 				2CDDAA832497AD9D001BA44A /* RecursiveLockSample.m */,
+				2CAF7EF724A6C7A900DB90D7 /* Dispatch_barrier_async_VC.h */,
+				2CAF7EF824A6C7A900DB90D7 /* Dispatch_barrier_async_VC.m */,
+				2CAF7EFD24A6CD1500DB90D7 /* DataManager.h */,
+				2CAF7EFE24A6CD1500DB90D7 /* DataManager.m */,
 			);
 			path = multiThread;
 			sourceTree = "<group>";
@@ -544,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA46CBF3241D19FD00EA7EBB /* MethodForward.m in Sources */,
+				2CAF7EFF24A6CD1500DB90D7 /* DataManager.m in Sources */,
 				CA46CC9A2421164E00EA7EBB /* CrashDefenderViewController.m in Sources */,
 				CA46CC08241DEFC800EA7EBB /* NSObject+Associated.m in Sources */,
 				CA18AB73242C8856009304BB /* AsyncRenderViewController.m in Sources */,
@@ -564,6 +575,7 @@
 				CA55A818241AF47C00FC581C /* AppDelegate.m in Sources */,
 				CAE87B95242791EC0012CDDE /* NSThreadSample.m in Sources */,
 				CA46CCAC2421C17700EA7EBB /* UIViewController+MemLeakFinder.m in Sources */,
+				2CAF7EF924A6C7A900DB90D7 /* Dispatch_barrier_async_VC.m in Sources */,
 				CA55A829241AF47D00FC581C /* main.m in Sources */,
 				CAE87B9E24279FCC0012CDDE /* SemaphoreSample.m in Sources */,
 				CA46CCA02421BB7400EA7EBB /* MemoryLeakViewController.m in Sources */,
